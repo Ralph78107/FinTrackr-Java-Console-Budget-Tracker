@@ -1,0 +1,49 @@
+# Java class files
+*.class
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build and dependency directories
+/bin/
+/build/
+/target/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# Maven
+.mvn/
+!**/src/main/**/.gitkeep
+
+# Gradle
+.gradle/
+build/
+
+# Environment variables or config files (optional)
+.env
+
+# WorkspaceStorage from VS Code Java Language Server
+**/.metadata/
+**/.recommenders/
+**/.classpath
+**/.project
+**/.settings
+workspaceStorage/
+
+# Backup files
+*.swp
+*~
