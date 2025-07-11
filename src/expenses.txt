@@ -1,1 +1,2 @@
 2025-07-11,Food,12.50,Lunch at a cafe
+2025-07-11,Warhammer,100.00,Orcs

@@ -2,6 +2,7 @@ import models.Expense;
 import services.ExpenseManager;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -34,7 +35,22 @@ public class Main {
                     manager.addExpense(e);
                     System.out.println("Expense added!");
                 }
-                case 2 -> manager.getAllExpenses().forEach(System.out::println);
+                case 2 -> {
+                    List<Expense> allExpenses = manager.getAllExpenses();
+                    if (allExpenses.isEmpty()) {
+                        System.out.println("No expenses found.");
+                    } else {
+                        System.out.println("\n--- All Expenses ---");
+                        for (Expense e : allExpenses) {
+                            System.out.println(e);
+                        }
+                    }
+                    System.out.println("\nPress Enter to return to the menu...");
+                    scanner.nextLine(); // This clears the leftover newline
+                    scanner.nextLine(); // This waits for actual Enter
+                    break;
+                    }   
+                
                 case 3 -> {
                     System.out.print("Category: ");
                     String cat = scanner.nextLine();
